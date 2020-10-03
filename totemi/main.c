@@ -1,3 +1,5 @@
-main() {
+extern void yyparse();
+
+int main() {
 	yyparse();
 }

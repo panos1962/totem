@@ -1,5 +1,9 @@
 #include "totem.h"
+#include <unistd.h>
+#include <ctype.h>
 #include <string.h>
+
+extern int yyparse(void);
 
 int main(int argc, char *argv[]) {
 	int c;

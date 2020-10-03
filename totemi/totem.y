@@ -2,6 +2,9 @@
 
 #include <stdio.h>
 
+extern int yylex();
+extern int yyerror();
+
 static int level = 0;
 
 static void indent(int n) {

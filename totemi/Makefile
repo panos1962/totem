@@ -1,6 +1,7 @@
 PROJECT = totem
 CFLAGS = -O
-EXEC = ../bin/$(PROJECT)i
+BINDIR = ../bin
+EXEC = $(BINDIR)/$(PROJECT)i
 OBJS = main.o parser.o lexer.o
 LIBS = -ll -ly
 
@@ -9,6 +10,7 @@ TEST=../sample/test11
 all: $(EXEC)
 
 $(EXEC): $(OBJS)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR) && chmod 775 $(BINDIR)
 	cc -o $(EXEC) $(OBJS) $(LIBS)
 
 parser.c parser.h: $(PROJECT).y

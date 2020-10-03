@@ -2,6 +2,8 @@
 
 #include "totem.h"
 
+extern int yylex(void);
+
 %}
 
 %union {
