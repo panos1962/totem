@@ -1,0 +1,15 @@
+*.swp
+src/*.o
+sample/*.html
+bin/totem
+src/lexer.c
+src/parser.c
+src/parser.h
+src/resrap.h
+bin/totemi
+totemi/lexer.c
+totemi/lexer.o
+totemi/main.o
+totemi/parser.c
+totemi/parser.h
+totemi/parser.o
